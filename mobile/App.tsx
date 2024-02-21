@@ -1,30 +1,11 @@
 import React from "react";
-import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { StyleSheet, View } from 'react-native'
-import { RootStackParamList } from './src/types'
-import Login from './src/screens/Login/Login'
-
-const Stack = createNativeStackNavigator<RootStackParamList>()
+import { View } from "react-native";
+import { LoginPage } from "./src/pages/LoginPage";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <View style={styles.mainContainer}>
-        <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen
-            name="Login"
-            component={Login}
-            options={{ headerShown: false }}
-          />
-        </Stack.Navigator>
-      </View>
-    </NavigationContainer>
+    <View style={{ flex: 1 }}>
+      <LoginPage />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-  },
-});
