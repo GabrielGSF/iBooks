@@ -6,7 +6,7 @@ import { StartPage } from "./src/pages/StartPage";
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
-      <StartPage />
+      <LoginPage />
     </View>
   );
 }

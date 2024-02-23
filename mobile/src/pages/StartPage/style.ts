@@ -7,6 +7,7 @@ export const Container = styled.View`
     background: #ffff;
     justifyContent: center;
     margin: 10px;
+    align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -22,19 +23,19 @@ export const Text = styled.Text`
     lineHeight: 19.5px;
 `;
 
-export const Button = styled.Pressable`
+export const StartButton = styled.TouchableOpacity`
+    background: #4D2D18;
     width: 388px;
     height: 68px;
-    borderRadius: 40px;
-    color: #4D2D18;
-    backgroundColor: #4D2D18;
-    justifyContent: center;
-    alignItems: center;
+    padding: 10px 60px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 `;
 
-export const ButtonText = styled.Text`
-    fontSize: 16px;
-    fontWeight: 700;
-    fontColor: #ffff;
-    lineHeight: 19.5px;
-`
+export const TextButton = styled.Text`
+    font-size: 16px;
+    font-weight: 700;
+    color: #EDE5D6;
+`;
