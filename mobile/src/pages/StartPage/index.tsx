@@ -12,12 +12,12 @@ export function StartPage() {
             <Text>
                 Aproveite a sua chegada com a Leitura de um livro e xicara de café. Um espaço reservado para aproveitar mais de você.
             </Text>
-            <Button
-                title="Cadastrar"
-            />
-            <Button
-                title="Login"
-            />
+            <Button>
+                <Text>Cadastrar</Text>    
+            </Button>
+            <Button>
+                <Text>Login</Text>
+            </Button>
         </Container>
     )
 }
